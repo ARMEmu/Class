@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School Club Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- STEP 1 - Bootstrap CSS link -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      padding: 30px 15px;
+    }
+    h1 {
+      text-align: center;
+      color: #FF5A43;
+    }
+    .club-card {
+      text-align: center;
+      border: 2px solid #FF5A43;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff8e1;
+    }
+    .club-card h3 {
+      color: #FF5A43;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My School Clubs</h1>
+
+  <!-- STEP 2 - container keeps the layout neat and centred -->
+  <div class="container">
+
+    <!-- STEP 3 - row holds all the columns in one horizontal line -->
+    <div class="row">
+
+      <!-- STEP 4 - col-12: full width on phones
+                   col-md-6: half width on tablets
+                   col-lg-4: one-third on desktops -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="club-card">
+          <h3>Coding Club</h3>
+          <p>I learn how to create websites, games, and simple apps.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="club-card">
+          <h3>Science Club</h3>
+          <p>I enjoy doing experiments and discovering how things work.</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="club-card">
+          <h3>Art Club</h3>
+          <p>I love drawing, painting, and creating colourful designs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- STEP 5 - Bootstrap JS script -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+
+</body>
+</html>
