@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Jungle Explorer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+  <style>
+    body { position: relative; }
+    .jungle-slide {
+      height: 200px;
+      text-align: center;
+      padding-top: 75px;
+      font-size: 1.8rem;
+      color: white;
+    }
+    .slide-rainforest { background: forestgreen; }
+    .slide-river { background: steelblue; }
+    .slide-night { background: #3b2f63; }
+
+
+    .section {
+      padding: 70px 20px;
+      min-height: 300px;
+    }
+
+
+    #rainforest { background: honeydew; }
+    #river { background: aliceblue; }
+    #night { background: lavenderblush; }
+  </style>
+</head>
+
+
+<body data-spy="scroll" data-target="#jungleNav" data-offset="60">
+
+  <div id="jungleCarousel" class="carousel slide" data-ride="carousel">
+
+
+    <ol class="carousel-indicators">
+      <li data-target="#jungleCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#jungleCarousel" data-slide-to="1"></li>
+      <li data-target="#jungleCarousel" data-slide-to="2"></li>
+    </ol>
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item active jungle-slide slide-rainforest">
+        🌿 Rainforest Adventure
+      </div>
+
+
+      <div class="carousel-item jungle-slide slide-river">
+        🐊 Jungle River Journey
+      </div>
+
+
+      <div class="carousel-item jungle-slide slide-night">
+        🌙 Night Jungle Safari
+      </div>
+    </div>
+
+
+    <a class="carousel-control-prev" href="#jungleCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+
+
+    <a class="carousel-control-next" href="#jungleCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+
+  </div>
+
+  <nav id="jungleNav" class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <span class="navbar-brand">🌿 Jungle Explorer</span>
+
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#rainforest">Rainforest</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="#river">River</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="#night">Night Safari</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+
+
+    <div id="rainforest" class="section">
+      <h2>🌿 Rainforest Adventure</h2>
+      <p>Walk through tall trees and spot monkeys, parrots, snakes, and colourful butterflies.</p>
+    </div>
+
+
+    <div id="river" class="section">
+      <h2>🐊 Jungle River Journey</h2>
+      <p>Follow the jungle river and discover crocodiles, frogs, fish, and water birds.</p>
+    </div>
+
+
+    <div id="night" class="section">
+      <h2>🌙 Night Jungle Safari</h2>
+      <p>Explore the jungle after sunset and look for owls, fireflies, bats, and leopards.</p>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
