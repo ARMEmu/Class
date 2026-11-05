@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Study Progress Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body { background-color: #f4f7ff; font-family: Arial, sans-serif; }
+    .jumbotron { background-color: #e8edff; border-left: 6px solid #FF5A43; }
+    .jumbotron h1 { color: #FF5A43; }
+    .section-title { color: #FF5A43; margin-top: 30px; margin-bottom: 15px; }
+    p { font-weight: bold; margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>My Study Progress Dashboard</h1>
+      <p class="lead">Track your subjects, completed lessons, and learning progress in one place.</p>
+
+      <button class="btn btn-primary">Math</button>
+      <button class="btn btn-success">Science</button>
+      <button class="btn btn-warning">English</button>
+      <button class="btn btn-danger">Coding</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h2 class="section-title">Lessons Completed <span class="badge badge-danger">24</span></h2>
+
+    <p>Math <span class="badge badge-primary">8 lessons</span></p>
+    <p>Science <span class="badge badge-success">6 lessons</span></p>
+    <p>English <span class="badge badge-warning">5 lessons</span></p>
+    <p>Coding <span class="badge badge-info">5 lessons</span></p>
+
+    <h2 class="section-title">Subject Progress</h2>
+
+    <p>Math</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-primary" style="width: 80%">80%</div>
+    </div>
+
+    <p>Science</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 65%">65%</div>
+    </div>
+
+    <p>English</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-warning" style="width: 55%">55%</div>
+    </div>
+
+    <p>Coding</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-danger" style="width: 70%">70%</div>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
