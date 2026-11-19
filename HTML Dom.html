@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <style>
+            .alert { color: aqua: background: green; padding: 5px; }
+            .tip { color:purple; }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">Welcome</h1>
+        <p class="intro">Hello</p>
+        <p>How are you?</p>
+        <script>
+            let div = document.createElement('div');
+            div.className = "alert";
+            div.innerHTML = "<p>Congrats! You have created a div.</p>";
+            document.body.append(div);
+
+            let heading = document.getElementById("healing");
+            heading.innerHTML = '&#128512;';
+
+            document.querySelector('.intro').innerHTML = "<strong>Good Job!</strong>";
+
+            let tip = document.createElement('h2');
+            tip.className = "tip";
+            tip.innerHTML = "Tip of the day";
+            document.body.prepend(tip);
+        </script>
+    </body>
+</html>
