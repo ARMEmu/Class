@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h3>Multipication using Fractions</h3>
+
+  <input type="number" id="num1" placeholder="First number">
+  <input type="number" id="num2" placeholder="Second number">
+
+  <button onclick="multiplyNumbers()">Multiply</button>
+
+  <p>Result: <span id="result">0</span></p>
+
+  <script>
+    function multiplyNumbers() {
+      let a = document.getElementById("num1").value;
+      let b = document.getElementById("num2").value;
+
+      let answer = a * b;
+
+      document.getElementById("result").innerText = answer;
+    }
+  </script>
+
+</body>
+</html>
